@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='ngContactManager'>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script src="lib/jquery-1.10.2.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="lib/angular/angular.js"></script>-->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/underscore.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/contactManagerController.js"></script>
+    <script src="scripts/contactManagerService.js"></script>
+    <script src="scripts/contactItemService.js"></script>
+
+    <title ng-bind="$root.title">Contact Manager</title>
+</head>
+<body>
+<header class="bs-header">
+    <div class="container">
+        <h1>Contact Manager</h1>
+        <p>Simple angular.js example application</p>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 main-container">
+            <div ng-view=""></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
